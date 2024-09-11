@@ -2,7 +2,7 @@ import { useState } from 'react'
 import WelcomeMessage from './components/WelcomeMessage'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Main from './components/MainContent'
+import MainContent from './components/MainContent'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -11,7 +11,7 @@ function App() {
      <WelcomeMessage />
      <Header />
      <Footer />
-     <Main />
+     <MainContent />
     </>
   )
 }
