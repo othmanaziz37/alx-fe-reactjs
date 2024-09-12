@@ -1,8 +1,8 @@
 function Footer (){
     return (
-        <div>
+        <footer>
             <p style={{ fontWeight: 'bold', textAlign: 'center' }}>  2023 City Lovers </p>
-        </div>
+        </footer>
     )
 };
 
