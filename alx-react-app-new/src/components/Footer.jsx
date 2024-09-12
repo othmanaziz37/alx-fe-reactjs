@@ -1,8 +1,9 @@
-export default function footer (){
+function Footer (){
     return (
-        <>
-            <p style={{ fontWeight: 'bold' }}>© 2023 City Lovers</p>
-        </>
+        <div>
+            <p style={{ fontWeight: 'bold', textAlign: 'center' }}>  2023 City Lovers </p>
+        </div>
     )
 };
 
+export default Footer;
