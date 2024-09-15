@@ -3,6 +3,7 @@ import Header from './components/header'
 import MainContent from './components/MainContent'
 import UserProfile from './components/UserProfile'
 import Footer from './components/Footer'
+import Counter from './components/Counter'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <Counter></Counter>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
