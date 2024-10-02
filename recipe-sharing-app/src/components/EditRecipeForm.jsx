@@ -1,14 +1,20 @@
-import  {useState} from 'react';
-import {useRecipeStore} from './recipeStore';
+import React, { useState } from 'react';
+import { useRecipeStore } from './recipeStore';
+import { useNavigate } from "react-router-dom";
 
 const EditRecipeForm = ({ recipe }) => {
+  const navigate = useNavigate();
+  const updateRecipe = useRecipeStore((state) => state.updateRecipe);
   const [title, setTitle] = useState(recipe.title);
   const [description, setDescription] = useState(recipe.description);
-  const updateRecipe = useRecipeStore(state => state.updateRecipe);
 
   const handleSubmit = (event) => {
     event.preventDefault();
     updateRecipe({ ...recipe, title, description });
+    navigate('/')
+    setTimeout(() => {
+      alert(`Recipe Edited and Updated sucessfullly`)
+    }, 100)
   };
 
   return (
