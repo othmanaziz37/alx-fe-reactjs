@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import HomePage from './components/HomePage'
+import AddRecipeForm from '../../recipe-sharing-app/src/components/AddRecipeForm'
+import RecipeDetail from './components/RecipeDetail'
 
 function App() {
   const [count, setCount] = useState(0)
